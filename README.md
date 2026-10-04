@@ -109,7 +109,7 @@ Open **http://localhost:3000**.
 
 ## Screenshots
 See the `screenshots/` folder (adding, completing and deleting a task).
-![Add task](screenshots/add.png)
+![Add task](screenshots/add.PNG)
 ![Complete task](screenshots/complete.PNG)
 ![Delete task](screenshots/delete.PNG)
 ![Api response](screenshots/todojson.PNG)
