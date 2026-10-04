@@ -1,0 +1,47 @@
+:root {
+  --bg: #f3f5f2;
+  --card: #ffffff;
+  --ink: #1f2a24;
+  --muted: #6b7a72;
+  --line: #dde3df;
+  --accent: #2f6f55;
+  --danger: #b3382c;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+}
+.app {
+  max-width: 560px;
+  margin: 48px auto;
+  padding: 24px;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+}
+h1 { margin: 0 0 16px; font-size: 1.6rem; }
+.form { display: flex; gap: 8px; margin-bottom: 12px; }
+.form input {
+  flex: 1; padding: 10px 12px; font-size: 1rem;
+  border: 1px solid var(--line); border-radius: 6px;
+}
+button {
+  padding: 10px 14px; font-size: 0.95rem; cursor: pointer;
+  border: none; border-radius: 6px; background: var(--accent); color: #fff;
+}
+button:hover { filter: brightness(1.1); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.list { list-style: none; margin: 8px 0 0; padding: 0; }
+.item {
+  display: flex; align-items: center; gap: 10px;
+  padding: 10px 0; border-bottom: 1px solid var(--line);
+}
+.item .title { flex: 1; cursor: text; word-break: break-word; }
+.item.done .title { text-decoration: line-through; color: var(--muted); }
+.item .edit { flex: 1; padding: 6px 8px; font-size: 1rem; border: 1px solid var(--accent); border-radius: 4px; }
+.delete { background: transparent; color: var(--danger); border: 1px solid var(--danger); padding: 6px 10px; }
+.muted { color: var(--muted); margin: 8px 0; }
+.error { color: var(--danger); background: #fbeceb; padding: 8px 10px; border-radius: 6px; }
